@@ -16,7 +16,7 @@ An example has been included ([example.c](https://github.com/alex-free/lib-ps-cd
 
 ![lib-ps-cd-id-2](images/ps-cd-id-2.png)
 
-| [Homepage](https://alex-free.github.io/lib-ps-cd-id) | [GitHub](https://github.com/alex-free/lib-ps-cd-id) | [PSX-Place Thread](https://www.psx-place.com/threads/lib-ps-cd-id-a-playstation-1-2-disc-image-identification-library.44040/) | [GBATemp Thread](https://gbatemp.net/threads/lib-ps-cd-id-a-playstation-1-2-cd-image-identification-library.657339/)
+| [Homepage](https://alex-free.github.io/lib-ps-cd-id) | [GitHub](https://github.com/alex-free/lib-ps-cd-id) | [PSX-Place Thread](https://www.psx-place.com/threads/lib-ps-cd-id-a-playstation-1-2-disc-image-identification-library.44040/) | [GBATemp Thread](https://gbatemp.net/threads/lib-ps-cd-id-a-playstation-1-2-cd-image-identification-library.657339/) |
 
 ## Version History
 

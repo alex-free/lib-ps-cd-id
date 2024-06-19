@@ -6,7 +6,7 @@ COMPILER_FLAGS+=-DVERSION=\"$(VERSION)\"
 
 $(PROGRAM): clean
 	mkdir -p $(BUILD_DIR)
-	$(COMPILER) -Wall -Wextra -Werror -pedantic -c lib-ps-cd-id.c -o $(BUILD_DIR)/lib-ps-cd-id.o
+	$(COMPILER) $(COMPILER_FLAGS_LIB) -c lib-ps-cd-id.c -o $(BUILD_DIR)/lib-ps-cd-id.o
 	$(AR) rcs $(BUILD_DIR)/libps-cd-id.a $(BUILD_DIR)/lib-ps-cd-id.o
 ifeq ($(strip $(EXECUTABLE_NAME)),)
 	$(COMPILER) $(COMPILER_FLAGS) $(SOURCE_FILES) -L./$(BUILD_DIR) -lps-cd-id -o $(BUILD_DIR)/$(PROGRAM)
@@ -34,7 +34,7 @@ clean-build:
 
 .PHONY: linux-i386
 linux-i386: clean
-	make $(PROGRAM) COMPILER_FLAGS='$(COMPILER_FLAGS_LINUX_X86) $(COMPILER_FLAGS)' EXECUTABLE_NAME='$(PROGRAM).i386'
+	make $(PROGRAM) COMPILER_FLAGS='$(COMPILER_FLAGS_LINUX_X86) $(COMPILER_FLAGS)' COMPILER_FLAGS_LIB='$(COMPILER_FLAGS_LINUX_X86) $(COMPILER_FLAGS_LIB)' EXECUTABLE_NAME='$(PROGRAM).i386'
 
 .PHONY: linux-x86_64
 linux-x86_64: clean

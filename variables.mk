@@ -28,7 +28,9 @@ PROGRAM=example
 # Source files to be compiled into $(PROGRAM) target
 SOURCE_FILES=example.c
 # Compiler flags used to compile $(SOURCE_FILES)
-COMPILER_FLAGS=-static -Wall -Wextra -Werror -pedantic
+COMPILER_FLAGS_LIB=-Wall -Wextra -Werror -pedantic
+# Compiler flags used to compile Lib PS-CD-ID
+COMPILER_FLAGS=$(COMPILER_FLAGS_LIB) -static
 # Compiler flag appended to $(COMPILER_FLAGS) to compile $(SOURCE_FILES) for Linux x86 builds
 COMPILER_FLAGS_LINUX_X86=-m32
 # Create builds in this directory relative to $(SOURCE_FILES)

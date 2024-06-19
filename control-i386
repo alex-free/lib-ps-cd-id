@@ -1,0 +1,6 @@
+Package: lib-ps-cd-id-example
+Version: 1.0
+Maintainer: Alex Free
+Architecture: i386
+Homepage: https://alex-free.github.io/lib-ps-cd-id
+Description: Example of Lib PS-CD-ID.
