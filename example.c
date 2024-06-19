@@ -36,7 +36,7 @@ int main (int argc, const char * argv[])
         {
             printf("boot file: %s\n", boot_file);
 
-            if((strncmp(boot_file, "SCES_028.35", 11) == 0))
+            if((strncmp(boot_file, "SCES_028.35", 11) == 0)) // Spyro: Year of the Dragon (Europe) (En,Fr,De,Es,It) (Rev 0) / Spyro: Year of the Dragon (Europe) (En,Fr,De,Es,It) (Rev 1)
 	        {
 		        // 000093C7 09 0A
                 int rev;
